@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<title>Session11 - assignment3</title>
+		<script src="js/angular.js" type="text/javascript"></script>
+		<script>
+			
+		var myApp = angular.module('myApp',[]);
+		myApp.controller('myController', function($scope){
+		
+			$scope.testFunction = function(){
+				alert("double click");
+			}
+				
+		});
+		</script>
+		<body ng-controller="myController">
+		
+		<h1>Double click with ng-double click</h1>
+		<button ng-dblclick="testFunction()">Double click</button>	
+		
+		</body>
+	</head>
+	</html>

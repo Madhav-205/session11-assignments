@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<title>Session11 - assignment4</title>
+		<script src="js/angular.js" type="text/javascript"></script>
+		<script>
+			
+		var myApp = angular.module('myApp',[]);
+		myApp.controller('myController', function($scope){
+		
+			$scope.username = "Madhav";
+			$scope.userId = "2335";
+			$scope.userDesignation = "Sr UX Designer";
+				
+		});
+		</script>
+		<body ng-controller="myController">
+		
+			<h1>Ng bind to scope values</h1>
+			
+			<p><b>Name</b> : <span ng-bind="username"></span></p>
+			<p><b>Id</b>: <span ng-bind="userId"></span></p>
+			<p><b>Designation</b>: <span  ng-bind="userDesignation"></span></p>
+		</body>
+	</head>
+	</html>
